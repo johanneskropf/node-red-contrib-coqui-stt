@@ -1,0 +1,30 @@
+{
+  "name": "node-red-contrib-coqui-stt",
+  "version": "0.1.0",
+  "description": "a node-red integration of the coqui stt component",
+  "author": "Johannes Kropf",
+  "license": "Apache-2.0",
+  
+  "keywords": [
+        "coqui",
+        "stt",
+        "speechtotext",
+        "asr",
+        "speech-to-text",
+        "node-red"
+  ],
+  "repository": {
+        "type": "git",
+        "url": "https://github.com/johanneskropf/node-red-contrib-coqui-stt.git"
+  },
+  "dependencies":{
+      "stt":"latest",
+      "music-metadata":"latest"
+  },
+  "node-red": {
+        "nodes": {
+            "coqui-wav": "coqui-wav.js",
+            "coqui-stream": "coqui-stream.js"
+        }
+    }
+}
