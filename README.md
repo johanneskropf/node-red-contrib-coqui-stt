@@ -1,4 +1,4 @@
-# node-red-contribute-coqui-stt
+# node-red-contrib-coqui-stt
 a node-red node to perform speech to text inference using coqui stt
 
 This suite of nodes uses the official [coqui-stt](https://github.com/coqui-ai/STT) node.js client cpu implementation.
