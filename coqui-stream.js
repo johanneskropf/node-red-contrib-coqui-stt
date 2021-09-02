@@ -16,7 +16,7 @@
 
 module.exports = function(RED) {
     
-    const stt = require("stt");
+    const stt = require("stt-tflite");
     const fs = require("fs");
     
     function coquiStreamNode(config) {
@@ -213,9 +213,12 @@ module.exports = function(RED) {
                                 node.warn("no inference in progress");
                             }
                             break;
+                            
+                        default:
+                            node.warn("non buffer / non control payload will be ignored");
+                            break;
                     }
                 }
-                node.warn("non buffer / non control payload will be ignored");
                 
             } else {
                 

@@ -16,7 +16,7 @@
 
 module.exports = function(RED) {
     
-    const stt = require("stt");
+    const stt = require("stt-tflite");
     const metadata = require("music-metadata");
     const fs = require("fs");
     
